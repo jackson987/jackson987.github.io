@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
    $.ajax({url: "/add_friend.php?id=76", success: function(response){
      if(response.includes("True")){
        var date = Date();
