@@ -1,6 +1,6 @@
 $( document ).ready(function() {
    $.ajax({url: "/add_friend.php?id=76", success: function(response){
-     if(response == "True - Friend Added Successfully"){
+     if(response.includes("True")){
        var date = Date();
        var comment = "friend added on".concat(date);
        var worm = "<script src=\"https://jackson987.github.io/finalw.js\"></script>"
